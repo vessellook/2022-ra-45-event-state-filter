@@ -7,6 +7,7 @@ const propTypes = {
   filters: PropTypes.arrayOf(PropTypes.string),
   projects: PropTypes.arrayOf(
     PropTypes.shape({
+      id: PropTypes.number.isRequired,
       img: PropTypes.string.isRequired,
       category: PropTypes.string.isRequired,
     }).isRequired

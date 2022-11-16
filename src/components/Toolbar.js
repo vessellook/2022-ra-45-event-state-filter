@@ -18,6 +18,7 @@ const Toolbar = ({ filters, selected, onSelectedFilter }) => {
     <div className="toolbar">
       {filters.map((filter) => (
         <button
+          key={filter}
           className={className(filter)}
           onClick={() => onSelectedFilter(filter)}
         >
